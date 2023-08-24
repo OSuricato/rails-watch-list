@@ -1,0 +1,19 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://source.unsplash.com/random/?<%= @list.name %>)">
+  <div class="container">
+    <h1><strong><%= @list.name %></strong></h1>
+    <%= link_to "My Lists", lists_path, class: "btn btn-ghost" %>
+  </div>
+</div>
+
+<div class="movies-list m-5">
+  <% @movies.each do |movie| %>
+    <div class="card-product">
+      <img src="<%= movie.poster_url %>">
+      <div class="card-product-infos">
+        <h5><%= movie.title %></h5>
+        <p><%= movie.overview %></p>
+        <p><strong>Rating:</strong> <%= movie.rating %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

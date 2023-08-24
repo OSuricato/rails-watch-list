@@ -78,3 +78,7 @@ gem "font-awesome-sass", "~> 6.1"
 
   # forms
 gem "simple_form"
+
+gem 'open-uri'
+
+gem 'json'
